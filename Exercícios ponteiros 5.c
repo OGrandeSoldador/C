@@ -6,27 +6,38 @@
 //e use um ponteiro para modificar os elementos do array dentro da função.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 
-int printArray(int *arr,int size)
+void printArray(int *arr,int size)
 {
-
-    for(int i=0;i<10;i++)
+    for(int i=0;i<size;i++)
     {
-        printf("positions: %d\n", num[i]);
+        arr[i] = i + 1;
+        printf("positions: %d\n", arr[i]);
     }
 
     printf("\n");
 
-    return 0;
 }
 
 int main(void)
 {
-    int a[];
-    int sizeofarray = 0;
-    scanf("Tamanho do array: %d", sizeofarray);
-    printArray(a);
+    int sizeofarray;
+    printf("tamanho do array: ");
+    scanf("%d", &sizeofarray);
+
+    int *a = malloc(sizeofarray * sizeof(int));
+
+    if (a == NULL)
+    {
+        printf("Erro de alocação");
+        return 1;
+    }
+
+    printArray(a,sizeofarray);
+
+    free(a);
 
     return 0;
 }
