@@ -124,7 +124,7 @@ void buscaPlataforma(Game *jogos,int tamanhovetor)
                     imprimejogo(&jogos[i]);
                     cond = 1;
                 }
-        }
+            }
         if (cond != 1)
             {
                 printf("Não encontrada, tente denovo\n");
@@ -145,13 +145,64 @@ void imprimetodosjogos(Game *jogos,int tamanhovetor)
         }
         else
         {
-            printf("Sem Jogo adicionado na posição: %d\n", i);
+            printf("Sem Jogo adicionado na posição: %d\n", i + 1);
             printf("-------------------------------------\n");
 
         }
     }
 }
 
+void delete_game(Game *jogos, int tamanhovetor)
+{
+    char s[1] = {"s"};
+    char confirmation[1] = {"z"};
+
+    fflush(stdin);
+
+    printf("Deseja deletar algum jogo?\n");
+    printf("s ou n? ");
+
+    int end2 = 0;
+    int end = 0;
+
+    while (end == 0)
+    {
+        fflush(stdin);
+        scanf("%s", confirmation);
+
+        if (strcmp(s, confirmation) == 0)
+        {
+
+            char name[30];
+            printf("Digite o nome do jogo, para deletar: ");
+            fflush(stdin);
+            scanf(" %[^\n]", name);
+
+            while (end2 == 0)
+            {
+                for (int i = 0; i < tamanhovetor; i++)
+                {
+                    if (strcmp(jogos[i].nome, name) == 0)
+                    {
+                        setcatalogo(&jogos[i], 1);
+                        end2 = 1;
+                        printf("\n");
+                        printf("Jogo: %s foi removido. \n\n", name);
+
+                    }
+                }
+                if (end2 == 0)
+                {
+                    printf("\nDigite jogo valido!\n\n");
+                    printf("Digite o nome do jogo, para deletar: ");
+                    fflush(stdin);
+                    scanf(" %[^\n]", name);
+                }
+            }
+        }
+        end = 1;
+    }
+}
 
 int main(void)
 {
@@ -172,6 +223,8 @@ int main(void)
     addcatalogo(jogos,capacidade_total,addGame("345","Playstation",04,05,2017,8),PosicaodeSubistituicao);
     addcatalogo(jogos,capacidade_total,addGame("678","Playstation",1,12,2017,8),PosicaodeSubistituicao);
 
+    imprimetodosjogos(jogos,capacidade_total);
+    delete_game(jogos,capacidade_total);
     imprimetodosjogos(jogos,capacidade_total);
     buscaPlataforma(jogos,capacidade_total);
 
