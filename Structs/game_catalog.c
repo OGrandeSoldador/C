@@ -204,6 +204,11 @@ void delete_game(Game* jogos, int tamanhovetor)
     printf("\n");
 }
 
+void update_game()
+{
+
+}
+
 int main(void)
 {
     Game jogos[5];
