@@ -10,8 +10,7 @@
 // Definition of a Node in a singly linked list
 struct Node {
     int data;
-    struct Node* next;
-};
+    struct Node* next;};
 
 // Function to create a new Node
 struct Node* newNode(int data) {
@@ -273,7 +272,9 @@ int main(void)
     printList(Head);
     Head = remove_at_spec_posi(Head,2);*/
     printList(Head);
-    Head = remove_from_key(Head,5);
+    Head = remove_last_node(Head);
+    Head = remove_last_node(Head);
+    Head = remove_last_node(Head);
     printList(Head);
 
     free(Head);
