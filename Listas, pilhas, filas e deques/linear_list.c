@@ -15,8 +15,8 @@ Reinitialize the structure*/
 
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-#define Max 20
 
 typedef int KEYTYPE;
 
@@ -27,7 +27,7 @@ typedef struct
 
 typedef struct
 {
-    Registry A[Max];
+    Registry *A;
     int Elem_Num;
 }List;
 
@@ -35,6 +35,7 @@ typedef struct
 void init_struc(List *l)
 {
     l->Elem_Num = 0;
+    l->A = (Registry *)malloc(l->Elem_Num * sizeof(Registry));
 }
 
 //Return the quantity of valid elements
@@ -70,7 +71,7 @@ int search_element(const List *l, const KEYTYPE k )
 //Insert elements into the structure
 bool insert_element(List *l, const Registry reg, const KEYTYPE i)
 {
-    if ((l->Elem_Num == Max) || (i < 0) || (i > l->Elem_Num))
+    if ((i < 0) || (i > l->Elem_Num))
         return false;
     for (int j = l->Elem_Num; j > i; j--) {l->A[j] = l->A[j-1];}
     l->A[i] = reg;
@@ -98,18 +99,18 @@ bool delete_element(List *l,KEYTYPE k)
 
 int main(void)
 {
-    List Elements_names = {7,2,3,4,5};
+    List Elements_names = {};
     init_struc(&Elements_names);
-    Elements_names.Elem_Num = 5;
     //printf("%d\n", Elements_names.Elem_Num);
     size_list(&Elements_names);
     display_list(&Elements_names);
     Registry b = {8};
     insert_element(&Elements_names,b,0);
+    insert_element(&Elements_names,b,0);
     display_list(&Elements_names);
     //search_element(&Elements_names,(0));
-    delete_element(&Elements_names,(2));
-    display_list(&Elements_names);
+  //  delete_element(&Elements_names,(2));
+   // display_list(&Elements_names);
 
 
     return 0;
