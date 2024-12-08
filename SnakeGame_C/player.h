@@ -33,7 +33,7 @@ void printcordsnake(PLAYER player);
 
 void deletelastpositionbody(PLAYER player,MAP* map);
 
-void keepmovefoward(PLAYER* player,MAP* map);
+void keepmoveforward(PLAYER* player,MAP* map);
 
 
 #endif //PLAYER_H

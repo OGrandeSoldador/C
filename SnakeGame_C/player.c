@@ -156,7 +156,7 @@ void deletelastpositionbody(PLAYER player,MAP* map)
     map->mapmemory[lastpositionY][lastpositionX] = EMPTY;
 }
 
-void keepmovefoward(PLAYER* player,MAP* map)
+void keepmoveforward(PLAYER* player,MAP* map)
 {
     if(player->snake.bodyX[1] < player->snake.bodyX[0])
     {

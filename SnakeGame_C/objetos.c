@@ -24,7 +24,7 @@ OBJECTS createItem(int x, int y) {
 }
 
 void checkCollision(PLAYER* player, MAP* map, bool* gameover) {
-    // Verifica o tipo de objeto na posição onde o jogador está
+    // Verifica o tipo de objeto na posição onde o jogador estád
      ObjectType Wall = map->mapmemory[player->posY][player->posX];
      ObjectType Item = map->mapmemory[player->posY][player->posX];
      ObjectType Snake = map->mapmemory[player->posY][player->posX];

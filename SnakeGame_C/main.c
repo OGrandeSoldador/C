@@ -35,7 +35,7 @@ void printcordsnake(PLAYER player);
 
 void deletelastpositionbody(PLAYER player,MAP* map);
 
-void keepmovefoward(PLAYER* player,MAP* map);
+void keepmoveforward(PLAYER* player,MAP* map);
 
 int main(void)
 {
@@ -72,16 +72,15 @@ int main(void)
     while (c_kbhit() == 0 && gameover == false)
     {
       printMap(&mainmap);
+      updateplayermatrix(player,&mainmap);
       deletelastpositionbody(player,&mainmap);
-      keepmovefoward(&player,&mainmap);
+      keepmoveforward(&player,&mainmap);
       //printcordsnake(player);
       checkCollision(&player,&mainmap,&gameover);
       updateplayermatrix(player,&mainmap);
       updatesnakebodymatrix(&player,&mainmap);
       usleep(70000);
     }
-
-
   }
 
   c_gotoxy(0,40);
