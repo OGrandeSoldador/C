@@ -72,6 +72,13 @@ void spawnitem(MAP* map,PLAYER player)
     OBJECTS item = createItem(pos.x, pos.y);
 
     // Coloca o símbolo do item no mapa
-    map->mapmemory[item.cord.x][item.cord.y] = item.symbol;
+    if (map->mapmemory[item.cord.x][item.cord.y] == EMPTY)
+    {
+        map->mapmemory[item.cord.x][item.cord.y] = item.symbol;
+    }
+    else
+    {
+        spawnitem(map,player);
+    }
 }
 

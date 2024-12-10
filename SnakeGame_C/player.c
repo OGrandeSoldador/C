@@ -153,6 +153,7 @@ void deletelastpositionbody(PLAYER player,MAP* map)
 {
     int lastpositionX = player.snake.bodyX[player.snake.bodylen - 1];
     int lastpositionY = player.snake.bodyY[player.snake.bodylen - 1];
+
     map->mapmemory[lastpositionY][lastpositionX] = EMPTY;
 }
 
