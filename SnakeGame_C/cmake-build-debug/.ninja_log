@@ -1,0 +1,7 @@
+# ninja log v6
+20	447	7597289278119687	CMakeFiles/Code.dir/map.c.obj	4b484e0343c8d02d
+2	455	7597289278069642	CMakeFiles/Code.dir/main.c.obj	9acc55351624690
+23	457	7597289278149715	CMakeFiles/Code.dir/player.c.obj	975db05570cf1902
+30	472	7597289278209773	CMakeFiles/Code.dir/objetos.c.obj	82cf58fde2fa78a9
+27	1082	7597289278179743	CMakeFiles/Code.dir/conio.c.obj	3608a038079a746d
+1084	1412	7597289288749852	Code.exe	387ee191419e44e9

@@ -13,5 +13,5 @@ add_executable(Code
     map.c
     player.c
     conio.c
-        objetos.c
+    objetos.c
 )

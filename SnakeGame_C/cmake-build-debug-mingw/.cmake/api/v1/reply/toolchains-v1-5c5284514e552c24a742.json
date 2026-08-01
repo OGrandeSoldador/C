@@ -10,16 +10,16 @@
 				{
 					"includeDirectories" : 
 					[
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
-						"E:/CLion 2024.1.5/bin/mingw/include",
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
-						"E:/CLion 2024.1.5/bin/mingw/x86_64-w64-mingw32/include"
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+						"F:/CLion 2024.1.5/bin/mingw/include",
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+						"F:/CLion 2024.1.5/bin/mingw/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : [],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "E:/CLion 2024.1.5/bin/mingw/bin/gcc.exe",
+				"path" : "F:/CLion 2024.1.5/bin/mingw/bin/gcc.exe",
 				"version" : "13.1.0"
 			},
 			"language" : "C",
@@ -37,19 +37,19 @@
 				{
 					"includeDirectories" : 
 					[
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
-						"E:/CLion 2024.1.5/bin/mingw/include",
-						"E:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
-						"E:/CLion 2024.1.5/bin/mingw/x86_64-w64-mingw32/include"
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+						"F:/CLion 2024.1.5/bin/mingw/include",
+						"F:/CLion 2024.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+						"F:/CLion 2024.1.5/bin/mingw/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : [],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "E:/CLion 2024.1.5/bin/mingw/bin/g++.exe",
+				"path" : "F:/CLion 2024.1.5/bin/mingw/bin/g++.exe",
 				"version" : "13.1.0"
 			},
 			"language" : "CXX",
@@ -75,7 +75,7 @@
 			"compiler" : 
 			{
 				"implicit" : {},
-				"path" : "E:/CLion 2024.1.5/bin/mingw/bin/windres.exe"
+				"path" : "F:/CLion 2024.1.5/bin/mingw/bin/windres.exe"
 			},
 			"language" : "RC",
 			"sourceFileExtensions" : 

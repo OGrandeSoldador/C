@@ -61,7 +61,7 @@ int main(void)
   {
     printMap(&mainmap);
     ch = inputmove();
-    //deletelastpositionbody(player,&mainmap);
+    deletelastpositionbody(player,&mainmap);
     movePlayer(&player,ch,mainmap);
     //printcordsnake(player);
     checkCollision(&player,&mainmap,&gameover);
@@ -73,7 +73,7 @@ int main(void)
     {
       printMap(&mainmap);
       updateplayermatrix(player,&mainmap);
-      //deletelastpositionbody(player,&mainmap);
+      deletelastpositionbody(player,&mainmap);
       keepmoveforward(&player,&mainmap);
       //printcordsnake(player);
       checkCollision(&player,&mainmap,&gameover);

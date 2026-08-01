@@ -21,9 +21,9 @@ int readsizemap(MAP* filecur)
         {
             filecur->columnslen++;
             if (colcur > filecur->lineslen)
-                {
+            {
                 filecur->lineslen = colcur;
-                }
+            }
             colcur = 0;
         }
         else

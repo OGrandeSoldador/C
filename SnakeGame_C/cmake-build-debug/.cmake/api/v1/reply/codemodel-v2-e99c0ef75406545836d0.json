@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/Code/Repositorio C/C/SnakeGame_C/cmake-build-debug-mingw",
-		"source" : "E:/Code/Repositorio C/C/SnakeGame_C"
+		"build" : "F:/Code/Repositorio C/C/SnakeGame_C/cmake-build-debug",
+		"source" : "F:/Code/Repositorio C/C/SnakeGame_C"
 	},
 	"version" : 
 	{
